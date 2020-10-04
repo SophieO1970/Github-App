@@ -7,6 +7,7 @@ import { User } from '../user'
   styleUrls: ['./github.component.css']
 })
 export class GithubComponent implements OnInit {
+  user: User[];
 
   constructor() { }
 
