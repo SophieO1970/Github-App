@@ -1,0 +1,9 @@
+.card p {
+    font-size: 10px;
+  }
+  
+  .card {
+    min-height: 50vh;
+    margin-bottom: 20px;
+  }
+  
