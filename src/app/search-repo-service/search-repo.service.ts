@@ -47,10 +47,10 @@ export class SearchRepoService {
           resolve ();
 
         },
-        // (error)=>{
-        //   console.log(error);
-        //   reject();
-        // }
+        (error)=>{
+          console.log(error);
+          reject();
+        }
         
       )
 
