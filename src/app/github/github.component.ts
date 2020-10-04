@@ -22,7 +22,7 @@ export class GithubComponent implements OnInit {
     public searchRepoService: SearchRepoService) { }
 
 
-    find(term: string) {
+    search(term: string) {
       this.searchUserService.getUsers(term).then(
         () => {
           this.users = this.searchUserService.usersGotten;
@@ -45,7 +45,7 @@ export class GithubComponent implements OnInit {
   
 
   ngOnInit(): void {
-    this.find ('sophia')
+    this.search('sophia')
   }
 
 }

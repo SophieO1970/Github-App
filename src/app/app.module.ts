@@ -7,7 +7,7 @@ import { SearchformComponent } from './searchform/searchform.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GithubComponent } from './github/github.component';
 import { HomeComponent } from './home/home.component';
-import { from } from 'rxjs';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,9 @@ import { from } from 'rxjs';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

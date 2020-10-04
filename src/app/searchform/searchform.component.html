@@ -1,1 +1,18 @@
-<p>searchform works!</p>
+<nav class="navbar navbar-light bg-light">
+    <form class="form-inline">
+      <input
+        class="form-control mr-sm-2"
+        type="text"
+        placeholder="Search"
+        aria-label="Search"
+        id="term"
+        name="term"
+        [(ngModel)]="searchTerm"
+        #term="ngModel"
+      />
+  
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="submitSearch()">
+        Search
+      </button>
+    </form>
+  </nav>
