@@ -1,10 +1,18 @@
-<div class="user-pic-name">
-    <div class="details">
-      <img src="{{ user.imagePath }}" alt="" />
-      <br />
-      <br />
-      <h4>{{ user.name }}</h4>
+<app-navbar></app-navbar>
+<div class="container-fluid">
+    <div class="user-pic-name">
+        <div class="details">
+            <img src="{{ user.imagePath }}" alt="" />
+            <br />
+            <br />
+            <div class="username">
+                <h4>{{ user.name }}</h4>
+            </div>
+
+        </div>
+       
     </div>
+    <br>
+    <h2>MY REPOS</h2>
     <app-user-repos [user]="user"></app-user-repos>
-  </div>
-  
+</div>

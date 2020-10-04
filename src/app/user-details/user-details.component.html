@@ -1,14 +1,19 @@
 <app-navbar></app-navbar>
 <br />
-<!-- <div class="container-fluid"> -->
-    <div class="jumbotron">
-  <div class="user-pic-name">
-    <div class="details">
-      <img src="{{ user.imagePath }}" alt="" />
-      <h4>{{ user.name }}</h4>
+    <div class="container-fluid">
+        <div class="user-pic-name">
+            <div class="details">
+                <img src="{{ user.imagePath }}" alt="" />
+                <br />
+                <br />
+                <div class="username">
+                    <h4>{{ user.name }}</h4>
+                </div>
+    
+            </div>
+           
+        </div>
+        <br>
+        <h2>MY REPOS</h2>
+        <app-user-repos [user]="user"></app-user-repos>
     </div>
-  </div>
-
-  <app-user-repos [user]="user"></app-user-repos>
-<!-- </div> -->
-</div>

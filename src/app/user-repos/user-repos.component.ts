@@ -3,7 +3,6 @@ import { SearchRepoService } from '../search-repo-service/search-repo.service';
 import { User } from '../user';
 import { Repo } from '../repo';
 
-
 @Component({
   selector: 'app-user-repos',
   templateUrl: './user-repos.component.html',
@@ -22,6 +21,7 @@ export class UserReposComponent implements OnInit {
     this.searchRepoService.getUserRepos(endpoint).then(
       () => {
         this.repos = this.searchRepoService.userRepos;
+        console.log(this.repos.length)
       },
       (error) => {
         console.log(error);
