@@ -1,4 +1,4 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { SearchRepoService } from '../search-repo-service/search-repo.service';
 import { User } from '../user';
 import { Repo } from '../repo';
@@ -14,7 +14,7 @@ export class UserReposComponent implements OnInit {
   @Input() user: User;
   repos: Repo[];
 
-  constructor(private searchRepoService: SearchRepoService) {}
+  constructor(private searchRepoService: SearchRepoService) { }
 
 
 
