@@ -3,7 +3,8 @@ import { Repo } from '../repo';
 import { User } from '../user'
 import { SearchUserService} from '../search-user-service/search-user.service'
 import { SearchRepoService } from '../search-repo-service/search-repo.service';
-
+import { Router } from '@angular/router'
+import { from } from 'rxjs';
 @Component({
   selector: 'app-github',
   templateUrl: './github.component.html',
@@ -18,7 +19,13 @@ export class GithubComponent implements OnInit {
 
   constructor( 
     public searchUserService: SearchUserService,
-    public searchRepoService: SearchRepoService) { }
+    public searchRepoService: SearchRepoService,
+    private router: Router) {}
+
+    goToUrl(id) {
+      this.router.navigate(['/users', id]);
+    }
+  
 
 
     search(term: string) {
