@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { User } from '../user';
 import { HttpClient } from '@angular/common/http';
-import { environment} from '../../environments/environment';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -9,14 +9,14 @@ import { environment} from '../../environments/environment';
 export class SearchUserService {
   usersGotten: User[];
 
-  getUsers(term: string){
+  getUsers(term: string) {
     let endpoint = `https://api.github.com/search/users?access token=${environment.apiKey}&q=${term}`;
-    let promise = new Promise((resolve, reject)=>{
+    let promise = new Promise((resolve, reject) => {
       this.http
         .get(endpoint)
         .toPromise()
         .then(
-          (results) =>{
+          (results) => {
             this.usersGotten = [];
             for (let i = 0; i < results['items'].length; i++) {
               let name = results['items'][i]['login'];
@@ -27,15 +27,24 @@ export class SearchUserService {
             }
             resolve();
           },
-       (error)=>{
-         console.log(error);
-         reject();
-       }
+          (error) => {
+            console.log(error);
+            reject();
+          }
+
         );
-      
+
     });
     return promise;
+
+  }
+  getUser(id) {
+    for (let user of this.usersGotten) {
+      if (user.id == id) {
+        return user;
+      }
+    }
   }
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 }
