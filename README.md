@@ -37,10 +37,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Description
 
-- Github project is a basic website/App that allows a user to view their github using their github link and live links. It also allow the user to view and access others people's
+- Github project is a basic website/App that allows a user to view their github using their github link and live links. It also allow the user to view and access others people's github.
 # Setup Instruction
 ## First Method
-1. Go to github and create a new repository ie https://github.com/SophieO1970/Quotes-App
+1. Go to github and create a new repository ie https://github.com/SophieO1970/Github-App
 
 2. In the terminal Navigate to the directory you want the project to reside in e.g (cd-/Desktop)
 
@@ -52,12 +52,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 | Behaviour | Input | Output |
 | ----------- | ----------- | ----------- |
-| Enter your Quote | Better your best|
-| Enter the author of the quote| sophia Olonde |
-| Enter the name of the submitter which is you|Kevin Munene  |
-|Date of the quote entry| 20/03/2020|
-| Delete option | An alert message pops out and asks you if you are sure you want to delete the project|
-
+| Click your Github link | It takes your github|
+| Click your live link| Takes you to your website through the browser|
+| Enter a name to search for a repo|The user searched appears with all his/her github links displayed |
 # Technologies Used
 
 | Technology | Function |
@@ -81,7 +78,7 @@ Phone Number
 +254710272763
 
 # License
-- [MIT](https://github.com/SophieO1970/Quotes-App.git/blob/master/LICENSE)
+- [MIT](https://github.com/SophieO1970/Github-App.git/blob/master/LICENSE)
 
 Copyright (c) 2020 SophieO1970
 
