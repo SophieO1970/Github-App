@@ -10,10 +10,10 @@ export class SearchUserService {
   usersGotten: User[];
 
   getUsers(term: string){
-    let endPoint = `https://api.github.com/search/users?access token=${environment.apiKey}&q=${term}`;
+    let endpoint = `https://api.github.com/search/users?access token=${environment.apiKey}&q=${term}`;
     let promise = new Promise((resolve, reject)=>{
       this.http
-        .get(endPoint)
+        .get(endpoint)
         .toPromise()
         .then(
           (results) =>{
