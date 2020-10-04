@@ -6,7 +6,7 @@ import { environment} from '../../environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class SeachUserService {
+export class SearchUserService {
   usersGotten: User[];
 
   getUsers(term: string){
