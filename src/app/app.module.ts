@@ -9,6 +9,9 @@ import { GithubComponent } from './github/github.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { DateCountPipe } from './date-count.pipe';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { UserReposComponent } from './user-repos/user-repos.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { DateCountPipe } from './date-count.pipe';
     NavbarComponent,
     GithubComponent,
     HomeComponent,
-    DateCountPipe
+    DateCountPipe,
+    NotFoundComponent,
+    UserDetailsComponent,
+    UserReposComponent
   ],
   imports: [
     BrowserModule,
