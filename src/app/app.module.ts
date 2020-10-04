@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { GithubComponent } from './github/github.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     SearchformComponent,
     NavbarComponent,
     GithubComponent,
-    HomeComponent
+    HomeComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
