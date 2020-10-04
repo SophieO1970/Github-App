@@ -59,5 +59,5 @@ export class SearchRepoService {
   }
 
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 }

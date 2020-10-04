@@ -120,5 +120,8 @@
         }
       }
     }},
-  "defaultProject": "Github-Replica"
+  "defaultProject": "Github-Replica",
+  "cli": {
+    "analytics": false
+  }
 }

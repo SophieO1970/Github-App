@@ -28,14 +28,14 @@ export class SearchUserService {
             resolve();
           },
        (error)=>{
-         console.log(error)
-         reject()
+         console.log(error);
+         reject();
        }
         );
       
     });
-    return promise
+    return promise;
   }
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 }
