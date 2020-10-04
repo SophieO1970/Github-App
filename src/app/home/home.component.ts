@@ -13,6 +13,7 @@ import { SearchRepoService } from '../search-repo-service/search-repo.service';
 export class HomeComponent implements OnInit {
 
   user:User;
+  userRepos: Repo[];
 
   constructor(
     public searchUserService: SearchUserService,
@@ -29,8 +30,19 @@ export class HomeComponent implements OnInit {
       }
     );
   }
+  getUserRepos(endpoint: string) {
+    this.searchRepoService.getUserRepos(endpoint).then(
+      () => {
+        this.userRepos = this.searchRepoService.userRepos;
+        console.log(this.userRepos.length);
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+  }
 
-  
+
   ngOnInit(): void {
     this.getUser('SophieO1970');
   }
