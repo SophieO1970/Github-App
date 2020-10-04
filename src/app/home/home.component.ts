@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../user';
+import { Repo } from '../repo';
+import { SearchUserService } from '../search-user-service/search-user.service';
+import { SearchRepoService } from '../search-repo-service/search-repo.service';
+
 
 @Component({
   selector: 'app-home',
