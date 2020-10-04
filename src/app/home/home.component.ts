@@ -12,9 +12,27 @@ import { SearchRepoService } from '../search-repo-service/search-repo.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  user:User;
+
+  constructor(
+    public searchUserService: SearchUserService,
+    public searchRepoService: SearchRepoService
+  ) {}
+
+  getUser(term: string) {
+    this.searchUserService.getUsers(term).then(
+      () => {
+        this.user = this.searchUserService.usersGotten[0];
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+  }
+
 
   ngOnInit(): void {
+    this.getUser('SophieO1970');
   }
 
 }
