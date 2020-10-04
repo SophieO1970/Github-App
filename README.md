@@ -80,5 +80,8 @@ Phone Number
 # License
 - [MIT](https://github.com/SophieO1970/Github-App.git/blob/master/LICENSE)
 
+## Figma Design
+https://www.figma.com/file/P3n6qF3Wn0kYG4V8GlBkjh/Untitled?node-id=0%3A1
+
 Copyright (c) 2020 SophieO1970
 
