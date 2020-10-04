@@ -27,10 +27,10 @@ export class SeachUserService {
             }
             resolve();
           },
-      //  (error)=>{
-      //    console.log(error)
-      //    reject()
-      //  }
+       (error)=>{
+         console.log(error)
+         reject()
+       }
         );
       
     });
